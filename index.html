@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeaceVerse - Coming Soon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background">
+        <img src="assets/background.jpg" alt="PeaceVerse Background">
+    </div>
+
+    <header>
+        <h1>PeaceVerse</h1>
+        <nav>
+            <a href="#">ShantiDoot</a>
+            <a href="#">PeaceGuard</a>
+            <a href="#">PeaceChat</a>
+            <a href="#">Art4Ahinsa</a>
+            <a href="#">PeacePlace</a>
+            <a href="#">PeaceCool</a>
+            <a href="#">PeaceGames</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>We Will Be Live Soon!</h2>
+        <p>Buckle up for a super exciting journey!</p>
+        <div class="subscribe-container">
+            <button id="subscribeButton" class="subscribe-btn">Subscribe for Updates</button>
+
+        </div>
+    </main>
+
+    <section class="about">
+        <h3>About PeaceVerse</h3>
+        <p>PeaceVerse is a global platform dedicated to fostering peace through stories, art, innovation, and dialogue. 
+           Join us on this incredible journey as we create a world where compassion, kindness, and understanding unite us all.</p>
+    </section>
+<!-- Container for blinking stars -->
+<canvas id="starsCanvas"></canvas>
+
+<!-- Container for comets -->
+<div id="comets-container"></div>
+
+<!-- Link to JavaScript -->
+<script src="main.js"></script>
+<!-- Subscription Popup Modal -->
+<div id="subscriptionModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Subscribe for Updates</h2>
+        <p>Enter your email to receive PeaceVerse updates.</p>
+        <input type="email" id="emailInput" placeholder="Enter your email" required>
+        <button onclick="submitEmail()">Subscribe</button>
+        <p id="responseMessage"></p>
+    </div>
+</div>
+
+</body>
+</html>
